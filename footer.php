@@ -10,6 +10,10 @@
 ?>
 
 		</div><!-- .col-full -->
+
+		<div class="col-full">
+			legg til nylig viste produkter her ...
+		</div>
 	</div><!-- #content -->
 
 	<?php do_action( 'storefront_before_footer' ); ?>
