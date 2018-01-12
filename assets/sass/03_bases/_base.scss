@@ -1,0 +1,28 @@
+/* path to file: ./src/scss/03_base/_base.scss
+*
+*  description: contains global styles, such as normalize, typography, colors, etc
+*  ------------------------------------------------------------------------------------
+*/
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+	color: $base-text-color;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 h5 {
+	font-weight: 900;
+}
+
+.test {
+	background: transparent;
+}

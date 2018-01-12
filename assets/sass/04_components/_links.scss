@@ -1,0 +1,21 @@
+/* path to file: ./04_components
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
+*/
+
+
+.site-content {
+	a {
+		padding-bottom: 2px;
+		color: $base-link-color;
+		border-bottom: 1px solid $base-link-color;
+	
+		@include transition($default);
+	
+		&:hover, &:focus {
+			color: $base-link-color;
+			border-bottom-color: transparent;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+/* path to file: ./04_components
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
+*/
+
+
+.main-navigation {
+	ul.menu > li > a {
+		border-bottom: 1px solid transparent;
+
+		&:hover, &:focus {
+			color: $base-link-color;
+		}
+	}
+}
+
+.site-header {
+	ul {
+		&.menu {
+			li {
+				&.current-menu-item {
+					> a {
+						color: $base-link-color;
+						border-bottom-color: $base-link-color;
+					}
+				}
+			}
+		}
+	}
+}

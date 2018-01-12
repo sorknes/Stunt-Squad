@@ -1,0 +1,18 @@
+/* path to file: ./03_bases
+*
+*  description: overwrite default Wordpress styling
+*  ------------------------------------------------------------------------------------
+*/
+
+
+/* remove search widget from header
+*/
+.widget_product_search form {
+  display: none;
+}
+
+.right-sidebar .content-area {
+  width: 100%;
+  margin-right: 0;
+  float: none;
+}

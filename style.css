@@ -1,0 +1,141 @@
+/*
+Theme Name:     Storefront Child Theme
+Theme URI:      https://github.com/stuartduff/storefront-child-theme
+Author:         Stuart Duff
+Author URI:     http://stuartduff.com
+Template:     	storefront
+Description:  	This is a blank child theme for WooThemes StoreFront theme
+Version:      	1.0.0
+License:      	GNU General Public License v2 or later
+License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  	storefront
+Tags:         	black, white, light, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+Storefront is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
+Images License: GNU General Public License v2 or later
+*/
+/*
+ * Add your own custom css below this text.
+ */
+/* path to file: ./01_configs
+*
+*  description: contains global styles, such as breakpoints, fonts, colors, etc
+*  ------------------------------------------------------------------------------------
+*/
+/* path to file: ./01_configs/colors
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
+*/
+/* path to file: ./01_config
+*
+*  description: default transition speeds
+*  ------------------------------------------------------------------------------------
+*/
+/* example usage:
+*  ------------------------------------------------------------------------------------
+*  .buf-class-name {
+*      @include transition($default);
+*  }
+*  ------------------------------------------------------------------------------------
+*/
+/* path to file: ./02_utilities
+*
+*  description: contains global mixins, functions, helper selectors, etc.
+*  ------------------------------------------------------------------------------------
+*/
+/* path to file: ./03_bases
+*
+*  description: contains global styles, such as normalize, typography, colors, etc
+*  ------------------------------------------------------------------------------------
+*/
+/* path to file: ./src/scss/03_base/_base.scss
+*
+*  description: contains global styles, such as normalize, typography, colors, etc
+*  ------------------------------------------------------------------------------------
+*/
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif; }
+
+h1, h2, h3, h4 h5 {
+  font-weight: 900; }
+
+.test {
+  background: transparent; }
+
+/* wordpress custom styling
+*/
+/* path to file: ./03_bases
+*
+*  description: overwrite default Wordpress styling
+*  ------------------------------------------------------------------------------------
+*/
+/* remove search widget from header
+*/
+.widget_product_search form {
+  display: none; }
+
+.right-sidebar .content-area {
+  width: 100%;
+  margin-right: 0;
+  float: none; }
+
+/* path to file: ./04_components
+*
+*  description: contains each self-contained component in its own .scss partial
+*  ------------------------------------------------------------------------------------
+*/
+/* path to file: ./04_components
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
+*/
+.site-footer {
+  color: white;
+  background-color: #333; }
+  .site-footer .site-info a {
+    color: white;
+    border-bottom: 1px solid white; }
+    .site-footer .site-info a:hover, .site-footer .site-info a:focus {
+      border-bottom-color: transparent; }
+
+/* path to file: ./04_components
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
+*/
+.site-content a {
+  padding-bottom: 2px;
+  color: #dc0c1f;
+  border-bottom: 1px solid #dc0c1f;
+  transition: all 300ms ease-in-out; }
+  .site-content a:hover, .site-content a:focus {
+    color: #dc0c1f;
+    border-bottom-color: transparent; }
+
+/* path to file: ./04_components
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
+*/
+.main-navigation ul.menu > li > a {
+  border-bottom: 1px solid transparent; }
+  .main-navigation ul.menu > li > a:hover, .main-navigation ul.menu > li > a:focus {
+    color: #dc0c1f; }
+
+.site-header ul.menu li.current-menu-item > a {
+  color: #dc0c1f;
+  border-bottom-color: #dc0c1f; }
