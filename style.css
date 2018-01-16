@@ -27,6 +27,11 @@ Images License: GNU General Public License v2 or later
 *  description: contains global styles, such as breakpoints, fonts, colors, etc
 *  ------------------------------------------------------------------------------------
 */
+/* path to file: ./01_configs/breakpoints
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
+*/
 /* path to file: ./01_configs/colors
 *
 *  description: 
@@ -73,9 +78,6 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4 h5 {
   font-weight: 900; }
 
-.site-content {
-  padding-top: 138px; }
-
 /* wordpress custom styling
 */
 /* path to file: ./03_bases
@@ -121,6 +123,17 @@ h1, h2, h3, h4 h5 {
     .site-header-cart .widget_shopping_cart a:hover, .site-header-cart .widget_shopping_cart a:focus {
       color: #580910; }
 
+@media screen and (min-width: 768px) {
+  .woocommerce-active .site-header .site-header-cart {
+    width: 30%; } }
+
+@media screen and (min-width: 1280px) {
+  .woocommerce-active .site-header .site-header-cart {
+    width: 20%; } }
+
+.woocommerce-Price-currencySymbol {
+  margin-right: 10px; }
+
 /* path to file: ./04_components
 *
 *  description: contains each self-contained component in its own .scss partial
@@ -162,19 +175,36 @@ h1, h2, h3, h4 h5 {
 */
 .jumbo-wrapper {
   width: 100%;
-  height: 600px;
+  height: 400px;
   background-size: cover;
   background-position: center center; }
+  @media screen and (min-width: 568px) {
+    .jumbo-wrapper {
+      height: 600px; } }
   .jumbo-wrapper .jumbotron {
     width: 100%;
     height: 100%; }
     .jumbo-wrapper .jumbotron .content {
-      max-width: 33.333333%;
-      padding: 30px;
+      max-width: 100%;
+      padding: 15px;
       color: white;
       background-color: #dc0c1f; }
+      @media screen and (min-width: 568px) {
+        .jumbo-wrapper .jumbotron .content {
+          max-width: 66.666667%;
+          padding: 30px; } }
+      @media screen and (min-width: 768px) {
+        .jumbo-wrapper .jumbotron .content {
+          max-width: 50%; } }
+      @media screen and (min-width: 1280px) {
+        .jumbo-wrapper .jumbotron .content {
+          max-width: 33.333333%; } }
       .jumbo-wrapper .jumbotron .content h1 {
-        color: white; }
+        color: white;
+        font-size: 1.5em; }
+        @media screen and (min-width: 568px) {
+          .jumbo-wrapper .jumbotron .content h1 {
+            font-size: 2.617924em; } }
       .jumbo-wrapper .jumbotron .content .button-wrapper {
         margin-top: 50px; }
         .jumbo-wrapper .jumbotron .content .button-wrapper .button {
@@ -216,14 +246,18 @@ h1, h2, h3, h4 h5 {
     color: #dc0c1f; }
 
 .cart-navigation {
-  width: 100%;
-  height: 40px;
-  background-color: black; }
-  .cart-navigation .cart-contents {
-    padding: 8px 0 7px 0;
-    color: white !important; }
-    .cart-navigation .cart-contents .count {
-      opacity: 1; }
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .cart-navigation {
+      width: 100%;
+      height: 40px;
+      display: block;
+      background-color: black; }
+      .cart-navigation .cart-contents {
+        padding: 8px 0 7px 0;
+        color: white !important; }
+        .cart-navigation .cart-contents .count {
+          opacity: 1; } }
 
 .site-header .main-navigation {
   width: 100% !important;
@@ -232,3 +266,14 @@ h1, h2, h3, h4 h5 {
 .site-header ul.menu li.current-menu-item > a {
   color: #dc0c1f;
   border-bottom-color: #dc0c1f; }
+
+/* path to file: ./04_components
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
+*/
+.site-content {
+  padding-top: 86px; }
+  @media screen and (min-width: 768px) {
+    .site-content {
+      padding-top: 138px; } }

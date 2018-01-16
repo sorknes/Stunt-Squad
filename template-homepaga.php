@@ -41,26 +41,7 @@ get_header();  ?>
 							<?php } ?>
 						</div>
 					</div>
-				</div>		
-			
-			<!-- <div class="jumbotron">
-							<div class="col-full">
-									<div class="row no-gutter">
-											<div class="col-xs-12">
-													<div class="content">
-															<h1 itemprop="headline"><?php echo get_the_title( $query_intro->post->ID ); ?></h1>
-															<?php echo get_the_content( $query_intro->post->ID ); ?>
-													</div>
-													<?php if($intro_custom_link){ ?>
-															<div class="btn-lg-wrapper">
-																	<a itemprop="url" class="btn btn-default btn-lg" href="<?php echo $intro_custom_link ?>" role="button" title="<?php echo $intro_custom_link_text ?>"><?php echo $intro_custom_link_text ?></a>
-															</div>
-													<?php } ?>
-											</div>
-									</div>
-							</div>
-					</div>
-			</div> -->
+				</div>
 <?php } // while
 
 wp_reset_postdata(); ?>

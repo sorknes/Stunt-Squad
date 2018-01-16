@@ -69,3 +69,17 @@
     }
   }
 }
+
+.woocommerce-active .site-header .site-header-cart {
+  @media screen and (min-width: $tablet) {
+    width: 30%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 20%;
+  }
+}
+
+.woocommerce-Price-currencySymbol {
+  margin-right: 10px;
+}

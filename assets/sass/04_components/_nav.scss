@@ -18,16 +18,21 @@
 }
 
 .cart-navigation {
-	width: 100%;
-	height: 40px;
-	background-color: black;
+	display: none;
 
-	.cart-contents {
-		padding: 8px 0 7px 0;
-		color: white !important;
+	@media screen and (min-width: $tablet) {
+		width: 100%;
+		height: 40px;
+		display: block;
+		background-color: black;
 
-		.count {
-			opacity: 1;
+		.cart-contents {
+			padding: 8px 0 7px 0;
+			color: white !important;
+
+			.count {
+				opacity: 1;
+			}
 		}
 	}
 }
