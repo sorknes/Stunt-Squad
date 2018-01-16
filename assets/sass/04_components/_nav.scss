@@ -7,7 +7,9 @@
 
 .main-navigation {
 	ul.menu > li > a {
-		border-bottom: 1px solid transparent;
+		border-bottom: 4px solid transparent;
+
+		@include transition($default);
 
 		&:hover, &:focus {
 			color: $base-link-color;
@@ -15,7 +17,27 @@
 	}
 }
 
+.cart-navigation {
+	width: 100%;
+	height: 40px;
+	background-color: black;
+
+	.cart-contents {
+		padding: 8px 0 7px 0;
+		color: white !important;
+
+		.count {
+			opacity: 1;
+		}
+	}
+}
+
 .site-header {
+	.main-navigation {
+		width: 100% !important;
+		padding-top: 17px;
+	}
+
 	ul {
 		&.menu {
 			li {

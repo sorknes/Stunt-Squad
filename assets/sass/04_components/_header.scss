@@ -5,6 +5,17 @@
 */
 
 
-// .home.page:not(.page-template-template-homepage) .site-header {
-// 	margin-bottom: 0;
-// }
+.site-header {
+	width: 100%;
+	padding-top: 0;
+	position: fixed;
+	border-bottom: none;
+
+	.site-branding {
+		display: none;
+	}
+
+	.product_list_widget li .quantity {
+		color: white;
+	}
+}

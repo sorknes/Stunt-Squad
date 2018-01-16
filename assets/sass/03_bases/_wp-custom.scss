@@ -16,3 +16,56 @@
   margin-right: 0;
   float: none;
 }
+
+/* widget_shopping_cart
+*/
+.site-header-cart {
+  .widget_shopping_cart {
+    color: white;
+    background-color: $base-link-color;
+
+    .total, .buttons {
+      background-color: $base-link-color;
+    }
+
+    a {
+      color: white;
+
+      @include transition($default);
+
+      &.remove {
+        &::before {
+          color: white;
+        }
+
+        &:hover, &:focus {
+          &::before {
+            color: $base-link-color-hover;
+          }
+        }
+      }
+
+      &.button {
+        color: $base-link-color;
+        background-color: white;
+  
+        @include transition($default);
+  
+        &.checkout {
+          color: white;
+          border: 4px solid white;
+          background-color: transparent;
+        }
+  
+        &:hover, &:focus {
+          color: white;
+          background-color: $base-link-color-hover;
+        }
+      }
+
+      &:hover, &:focus {
+        color: $base-link-color-hover;
+      }
+    }
+  }
+}

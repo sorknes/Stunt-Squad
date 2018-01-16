@@ -26,6 +26,19 @@
 	<?php do_action( 'storefront_before_header' ); ?>
 
 	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
+		<div class="cart-navigation">
+			<div class="col-full">
+				<ul id="site-header-cart" class="site-header-cart menu">
+					<li class="<?php echo esc_attr( $class ); ?>">
+						<?php storefront_cart_link(); ?>
+					</li>
+					<li>
+						<?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>
+					</li>
+				</ul>
+			</div>
+		</div>
+
 		<div class="col-full">
 
 			<?php
@@ -56,7 +69,7 @@
 	do_action( 'storefront_before_content' ); ?>
 
 	<div id="content" class="site-content" tabindex="-1">
-		<div class="col-full">
+		<div class=""> <!-- col-full -->
 
 		<?php
 		/**

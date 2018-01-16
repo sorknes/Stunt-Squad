@@ -27,17 +27,43 @@ function sf_child_theme_dequeue_style() {
 add_action( 'storefront_header', 'jk_storefront_header_content', 40 );
     function jk_storefront_header_content() { ?>
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
-		<?php
-	}
+	<?php }
 
 // remove search from header
-add_action( 'init', 'jk_remove_storefront_header_search' );
-function jk_remove_storefront_header_search() {
+add_action( 'init', 'st_remove_storefront_header_search' );
+function st_remove_storefront_header_search() {
     remove_action( 'storefront_header', 'storefront_product_search', 40 ); 
 }
 
+// remove cart from site-navigation
+// add_action( 'init', 'st_remove_actions' );
+// function st_remove_actions() {
+// 	remove_action( 'storefront_header', 'storefront_header_cart', 60 );
+// }
+
 // remove sidebar
-add_action( 'init', 'jk_remove_sidebar' );
-function jk_remove_sidebar() {
+add_action( 'init', 'st_remove_sidebar' );
+function st_remove_sidebar() {
     remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
+}
+
+if ( ! function_exists( 'storefront_header_cart' ) ) {
+	/**
+	 * Display Header Cart
+	 *
+	 * @since  1.0.0
+	 * @uses  storefront_is_woocommerce_activated() check if WooCommerce is activated
+	 * @return void
+	 */
+	function storefront_header_cart() {
+		if ( storefront_is_woocommerce_activated() ) {
+			if ( is_cart() ) {
+				$class = 'current-menu-item';
+			} else {
+				$class = '';
+			}
+		?>
+		<?php
+		}
+	}
 }
