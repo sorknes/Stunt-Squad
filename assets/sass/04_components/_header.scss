@@ -4,15 +4,22 @@
 *  ------------------------------------------------------------------------------------
 */
 
+.home {
+	.site-header {
+		border-bottom: none;
+	}
+}
 
 .site-header {
 	width: 100%;
 	padding-top: 0;
 	position: fixed;
-	border-bottom: none;
+	border-bottom: 1px solid #f0f0f0;
 
 	.site-branding {
-		display: none;
+		.custom-logo-link {
+			display: none;
+		}
 	}
 
 	.product_list_widget li .quantity {

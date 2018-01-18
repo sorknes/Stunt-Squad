@@ -66,10 +66,18 @@
 	 *
 	 * @hooked storefront_header_widget_region - 10
 	 */
-	do_action( 'storefront_before_content' ); ?>
+	// do_action( 'storefront_before_content' ); ?>
 
 	<div id="content" class="site-content" tabindex="-1">
-		<div class=""> <!-- col-full -->
+		<?php if ( is_front_page() && is_home() ) {
+			echo '<div>';
+		} elseif ( is_front_page()){
+			echo '<div>';
+		} elseif ( is_home()){
+			echo '<div class="col-full">';
+		} else {
+			echo '<div class="col-full">';
+	} ?>
 
 		<?php
 		/**

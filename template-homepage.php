@@ -42,9 +42,18 @@ get_header();  ?>
 						</div>
 					</div>
 				</div>
+			</div>
 <?php } // while
 
 wp_reset_postdata(); ?>
+
+<?php
+/**
+ * Functions hooked in to storefront_before_content
+ *
+ * @hooked storefront_header_widget_region - 10
+ */
+do_action( 'storefront_before_content' ); ?>
 
 <?php
 get_footer();

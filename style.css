@@ -144,6 +144,14 @@ h1, h2, h3, h4 h5 {
 *  description: 
 *  ------------------------------------------------------------------------------------
 */
+.woocommerce-breadcrumb {
+  border-bottom: 1px solid #f0f0f0; }
+
+/* path to file: ./04_components
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
+*/
 .site-footer {
   color: white;
   background-color: #333; }
@@ -158,12 +166,15 @@ h1, h2, h3, h4 h5 {
 *  description: 
 *  ------------------------------------------------------------------------------------
 */
+.home .site-header {
+  border-bottom: none; }
+
 .site-header {
   width: 100%;
   padding-top: 0;
   position: fixed;
-  border-bottom: none; }
-  .site-header .site-branding {
+  border-bottom: 1px solid #f0f0f0; }
+  .site-header .site-branding .custom-logo-link {
     display: none; }
   .site-header .product_list_widget li .quantity {
     color: white; }
