@@ -26,3 +26,21 @@ input[type="submit"].alt,
 		background-color: $base-link-color-hover;
 	}
 }
+
+.button, {
+	color: white;
+	background-color: $base-link-color;
+
+	@include transition($default);
+
+	&:hover, &:focus {
+		color: white !important;
+		background-color: $base-link-color-hover !important;
+	}
+}
+
+.jumbotron {
+	.button, {
+		color: black;
+	}
+}
