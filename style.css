@@ -298,6 +298,9 @@ input[type="submit"].alt,
 *  description: 
 *  ------------------------------------------------------------------------------------
 */
+.storefront-primary-navigation {
+  background-color: #f2f2f2; }
+
 .main-navigation ul.menu > li > a {
   border-bottom: 4px solid transparent;
   transition: all 300ms ease-in-out; }
