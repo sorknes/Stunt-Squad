@@ -52,6 +52,58 @@
 						border-bottom-color: $base-link-color;
 					}
 				}
+
+				// ul {
+				// 	li {
+				// 		> a {
+				// 			color: white;
+
+				// 			@include transition($default);
+
+				// 			&::after {
+				// 				margin-top: 3px;
+				// 				font-family: 'FontAwesome';
+				// 				font-size: 10px;
+				// 				font-weight: 300;
+				// 				text-rendering: auto;
+				// 				content: "\f054";
+				// 				float: right;
+				// 			}
+
+				// 			&:hover, &:focus {
+				// 				color: black;
+				// 				background-color: white;
+				// 			}
+				// 		}
+				// 	}
+				// }
+			}
+		}
+	}
+}
+
+.main-navigation ul.menu ul.sub-menu {
+	background-color: black;
+
+	li {
+		>	a {
+			color: white;
+
+			@include transition($default);
+
+			&::after {
+				margin-top: 3px;
+				font-family: 'FontAwesome';
+				font-size: 10px;
+				font-weight: 300;
+				text-rendering: auto;
+				content: "\f054";
+				float: right;
+			}
+
+			&:hover, &:focus {
+				color: black;
+				background-color: white;
 			}
 		}
 	}
