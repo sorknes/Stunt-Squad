@@ -70,6 +70,10 @@
   }
 }
 
+.header-widget-region .widget {
+  font-size: 1em;
+}
+
 .woocommerce-active .site-header .site-header-cart {
   @media screen and (min-width: $tablet) {
     width: 30%;

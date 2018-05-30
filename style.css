@@ -126,6 +126,9 @@ img {
     .site-header-cart .widget_shopping_cart a:hover, .site-header-cart .widget_shopping_cart a:focus {
       color: #580910; }
 
+.header-widget-region .widget {
+  font-size: 1em; }
+
 @media screen and (min-width: 768px) {
   .woocommerce-active .site-header .site-header-cart {
     width: 30%; } }
@@ -141,7 +144,7 @@ img {
 */
 /* path to file: ./src/scss/03_base/_base.scss
 *
-*  description: 
+*  description: Base styles
 *  ------------------------------------------------------------------------------------
 */
 .single-product div.product .product_meta a {
