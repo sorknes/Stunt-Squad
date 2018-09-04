@@ -1,0 +1,27 @@
+// -------------------------------------------------------------------------------
+//
+// Description: Insert text here
+// ===============================================================================
+//
+
+.storefront-breadcrumb {
+  padding: 0;
+}
+
+.woocommerce-breadcrumb {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $base-link-color;
+  border-top: 1px solid $black-tint-10;
+  border-bottom: 1px solid $black-tint-10;
+
+  a {
+    &:hover, &focus {
+      color: $base-link-color;
+    }
+  }
+
+  .breadcrumb-separator {
+    color: $black-tint-50;
+  }
+}

@@ -4,8 +4,18 @@
 // ===============================================================================
 //
 
-$base-text-color: #292929;
-$base-link-color: #dc0c1f;
-$base-link-color-hover: darken(#860e19, 10%);
+$black-tint-90: #1a1a1a;
+$black-tint-80: #333333;
+$black-tint-70: #4d4d4d;
+$black-tint-60: #666666;
+$black-tint-50: #808080;
+$black-tint-40: #999999;
+$black-tint-30: #b3b3b3;
+$black-tint-20: #cccccc;
+$black-tint-10: #e5e5e5;
 
-$grey-tint-10: #f2f2f2;
+$message-green-bg: #079561;
+
+$base-text-color: $black-tint-80;
+$base-link-color: #dc0c1f;
+$base-link-color-hover: #860e19;

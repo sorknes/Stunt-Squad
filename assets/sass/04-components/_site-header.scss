@@ -4,23 +4,35 @@
 // ===============================================================================
 //
 
-.sp-header-row {
-  text-align: center;
-}
-
-
-
 .main-navigation ul li a:hover,
+.main-navigation ul li a:focus,
 .main-navigation ul li:hover > a,
+.main-navigation ul li:focus > a,
 .site-title a:hover,
+.site-title a:focus,
 a.cart-contents:hover,
+a.cart-contents:focus,
 .site-header-cart .widget_shopping_cart a:hover,
+.site-header-cart .widget_shopping_cart a:focus,
 .site-header-cart:hover > li > a,
+.site-header-cart:focus > li > a,
 .site-header ul.menu li.current-menu-item > a {
   color: $base-link-color-hover;
 }
 
+.woocommerce-active {
+  .site-header {
+    .site-branding {
+      img {
+        max-width: 150px;
+        margin: 0 auto;    
+      }
+    }
+  }
+}
+
 .site-header {
+  border-top: 4px solid $base-link-color;
   border-bottom: none;
 
   .sp-header-row {
@@ -29,7 +41,7 @@ a.cart-contents:hover,
         text-align: left;
 
         .cart-contents {
-          color: black;
+          color: $black-tint-60;
 
           &:hover, &:focus {
             color: $base-link-color;
@@ -58,6 +70,54 @@ a.cart-contents:hover,
               color: white;
             }
           }
+
+          &.button {
+            &.checkout {
+              &.wc-forward {
+                color: $base-link-color;
+                border: 2px solid $base-link-color;
+                background-color: transparent;
+              }
+            }
+
+            &:hover, &:focus {
+              text-decoration: none;
+
+              &.checkout {
+                &.wc-forward {
+                  color: $base-link-color-hover;
+                  border-color: $base-link-color-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .site-search {
+    .search-field {
+      border-bottom: 1px solid $black-tint-60;
+      background-color: white;
+      box-shadow: none;
+
+      @include transition($default);
+
+      &:hover, &:focus {
+        border-bottom-color: $base-link-color;
+      }
+    }
+
+    .widget_product_search form,
+    .widget_search form {
+      &::before {
+        @include transition($default);
+      }
+
+      &:hover, &:focus {
+        &::before {
+          color: red;
         }
       }
     }

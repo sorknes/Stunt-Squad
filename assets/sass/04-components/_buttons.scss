@@ -1,0 +1,38 @@
+// -------------------------------------------------------------------------------
+//
+// Description: Insert text here
+// ===============================================================================
+//
+
+.button {
+  font-weight: 400;
+
+  &.add_to_cart_button {
+    &::after {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      line-height: 1;
+      vertical-align: -.125em;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      line-height: inherit;
+      vertical-align: baseline;
+      content: "\f30b";
+      margin-left: 0.5407911001em;
+    }
+
+    &:hover, &:focus {
+      background-color: $base-link-color-hover;
+    }
+  }
+}
+
+.onsale {
+  color: $message-green-bg;
+  border-color: $message-green-bg;
+  border-radius: 0;
+}
