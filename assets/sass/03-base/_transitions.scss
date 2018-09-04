@@ -1,0 +1,23 @@
+// -------------------------------------------------------------------------------
+//
+// Description: Insert text here
+// ===============================================================================
+//
+
+@mixin transition($default) {
+  transition: all $default ease-in-out
+}
+
+// Transition timing
+$instant:     0ms;
+$super-fast:  100ms;
+$fast:        200ms;
+$default:     300ms;
+$easy:        500ms;
+$slow:        800ms;
+
+// Example usage
+// -------------------------------------------------------------------------------
+// .class-name {
+//   @include transition($default);
+// }

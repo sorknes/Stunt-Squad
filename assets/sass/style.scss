@@ -1,5 +1,5 @@
 /*
-Theme Name:     Storefront Child Theme
+Theme Name:     Storefront Child Theme (Stunt Squad)
 Theme URI:      https://github.com/stuartduff/storefront-child-theme
 Author:         Stuart Duff
 Author URI:     http://stuartduff.com
@@ -20,18 +20,21 @@ FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
 Images License: GNU General Public License v2 or later
 */
 
-/*
- * Add your own custom css below this text.
- */
+// Add your own custom css below this text.
+// -------------------------------------------------------------------------------
 
-// contains global styles, such as breakpoints, fonts, colors, etc
-@import '01_configs/all-configs';
+// 00. Contains styling from external vendors
 
-// contains global mixins, functions, helper selectors, etc.
-@import "02_utilities/all-utilities";
+// 01. Contains global styles, such as breakpoints, fonts, colors, etc
 
-// contains global styles, such as normalize, typography, colors, etc
-@import "03_bases/all-bases";
+// 02. Contains global mixins, functions, helper selectors, etc.
 
-// contains each self-contained component in its own .scss partial
-@import "04_components/all-components";
+// 03. Contains global styles, such as normalize, fonts, colors, etc
+@import './03-base/all-base';
+
+// 04. Contains each self-contained component in its own .scss partial
+@import './04-components/all-components';
+
+// 05. Contains predefined mixins, such as placeholder, border, border-radius etc
+
+// 06. Contains print specific styling

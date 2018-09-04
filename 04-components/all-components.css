@@ -1,0 +1,29 @@
+.jumbo-wrapper {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center center; }
+  .jumbo-wrapper .jumbotron {
+    width: 100%;
+    height: 100%; }
+    .jumbo-wrapper .jumbotron .content {
+      max-width: 100%;
+      padding: 15px;
+      color: white; }
+      .jumbo-wrapper .jumbotron .content h1 {
+        color: white;
+        font-size: 1.5em; }
+      .jumbo-wrapper .jumbotron .content .button-wrapper {
+        margin-top: 50px; }
+        .jumbo-wrapper .jumbotron .content .button-wrapper .button {
+          padding: 12px 1.41575em;
+          background-color: white; }
+          .jumbo-wrapper .jumbotron .content .button-wrapper .button::after {
+            margin-left: 0.5407911001em;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            display: inline-block;
+            content: "\f178";
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale; }

@@ -1,5 +1,5 @@
 /*
-Theme Name:     Storefront Child Theme
+Theme Name:     Storefront Child Theme (Stunt Squad)
 Theme URI:      https://github.com/stuartduff/storefront-child-theme
 Author:         Stuart Duff
 Author URI:     http://stuartduff.com
@@ -19,58 +19,11 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
 Images License: GNU General Public License v2 or later
 */
-/*
- * Add your own custom css below this text.
- */
-/* path to file: ./01_configs
-*
-*  description: contains global styles, such as breakpoints, fonts, colors, etc
-*  ------------------------------------------------------------------------------------
-*/
-/* path to file: ./01_configs/breakpoints
-*
-*  description: 
-*  ------------------------------------------------------------------------------------
-*/
-/* path to file: ./01_configs/colors
-*
-*  description: 
-*  ------------------------------------------------------------------------------------
-*/
-/* path to file: ./01_config
-*
-*  description: default transition speeds
-*  ------------------------------------------------------------------------------------
-*/
-/* example usage:
-*  ------------------------------------------------------------------------------------
-*  .buf-class-name {
-*      @include transition($default);
-*  }
-*  ------------------------------------------------------------------------------------
-*/
-/* path to file: ./02_utilities
-*
-*  description: contains global mixins, functions, helper selectors, etc.
-*  ------------------------------------------------------------------------------------
-*/
-/* path to file: ./03_bases
-*
-*  description: contains global styles, such as normalize, typography, colors, etc
-*  ------------------------------------------------------------------------------------
-*/
-/* path to file: ./src/scss/03_base/_base.scss
-*
-*  description: contains global styles, such as normalize, typography, colors, etc
-*  ------------------------------------------------------------------------------------
-*/
-*, *:before, *:after {
-  box-sizing: border-box; }
-
 body {
-  color: #333;
+  color: #292929;
   font-family: 'Lato', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 16px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif; }
@@ -78,206 +31,21 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4 h5 {
   font-weight: 900; }
 
-img {
-  border-radius: 0; }
-
-/* wordpress custom styling
-*/
-/* path to file: ./03_bases
-*
-*  description: overwrite default Wordpress styling
-*  ------------------------------------------------------------------------------------
-*/
-/* remove search widget from header
-*/
-.widget_product_search form {
-  display: none; }
-
-.right-sidebar .content-area {
-  width: 100%;
-  margin-right: 0;
-  float: none; }
-
-/* widget_shopping_cart
-*/
-.site-header-cart .widget_shopping_cart {
-  color: white;
-  background-color: #dc0c1f; }
-  .site-header-cart .widget_shopping_cart .total, .site-header-cart .widget_shopping_cart .buttons {
-    background-color: #dc0c1f; }
-  .site-header-cart .widget_shopping_cart a {
-    color: white;
-    transition: all 300ms ease-in-out; }
-    .site-header-cart .widget_shopping_cart a.remove::before {
-      color: white; }
-    .site-header-cart .widget_shopping_cart a.remove:hover::before, .site-header-cart .widget_shopping_cart a.remove:focus::before {
-      color: #580910; }
-    .site-header-cart .widget_shopping_cart a.button {
-      color: #dc0c1f;
-      background-color: white;
-      transition: all 300ms ease-in-out; }
-      .site-header-cart .widget_shopping_cart a.button.checkout {
-        color: white;
-        border: 4px solid white;
-        background-color: transparent; }
-      .site-header-cart .widget_shopping_cart a.button:hover, .site-header-cart .widget_shopping_cart a.button:focus {
-        color: white;
-        background-color: #580910; }
-    .site-header-cart .widget_shopping_cart a:hover, .site-header-cart .widget_shopping_cart a:focus {
-      color: #580910; }
-
-.header-widget-region .widget {
-  font-size: 1em; }
-
-@media screen and (min-width: 768px) {
-  .woocommerce-active .site-header .site-header-cart {
-    width: 30%; } }
-
-@media screen and (min-width: 1280px) {
-  .woocommerce-active .site-header .site-header-cart {
-    width: 20%; } }
-
-.woocommerce-Price-currencySymbol {
-  margin-right: 10px; }
-
-/* woocommerce custom styling
-*/
-/* path to file: ./src/scss/03_base/_base.scss
-*
-*  description: Base styles
-*  ------------------------------------------------------------------------------------
-*/
-.single-product div.product .product_meta a {
-  text-decoration: none; }
-
-button.alt,
-input[type="button"].alt,
-input[type="reset"].alt,
-input[type="submit"].alt,
-.button.alt,
-.added_to_cart.alt,
-.widget-area .widget a.button.alt,
-.added_to_cart,
-.widget a.button.checkout {
-  background-color: #dc0c1f;
-  transition: all 300ms ease-in-out; }
-  button.alt:hover, button.alt:focus,
-  input[type="button"].alt:hover,
-  input[type="button"].alt:focus,
-  input[type="reset"].alt:hover,
-  input[type="reset"].alt:focus,
-  input[type="submit"].alt:hover,
-  input[type="submit"].alt:focus,
-  .button.alt:hover,
-  .button.alt:focus,
-  .added_to_cart.alt:hover,
-  .added_to_cart.alt:focus,
-  .widget-area .widget a.button.alt:hover,
-  .widget-area .widget a.button.alt:focus,
-  .added_to_cart:hover,
-  .added_to_cart:focus,
-  .widget a.button.checkout:hover,
-  .widget a.button.checkout:focus {
-    background-color: #580910; }
-
-.button {
-  color: white;
-  background-color: #dc0c1f;
-  transition: all 300ms ease-in-out; }
-  .button:hover, .button:focus {
-    color: white !important;
-    background-color: #580910 !important; }
-
-.jumbotron .button {
-  color: black; }
-
-/* path to file: ./04_components
-*
-*  description: contains each self-contained component in its own .scss partial
-*  ------------------------------------------------------------------------------------
-*/
-/* path to file: ./04_components
-*
-*  description: 
-*  ------------------------------------------------------------------------------------
-*/
-.woocommerce-breadcrumb {
-  border-bottom: 1px solid #f0f0f0; }
-
-/* path to file: ./04_components
-*
-*  description: 
-*  ------------------------------------------------------------------------------------
-*/
-/* path to file: ./04_components
-*
-*  description: 
-*  ------------------------------------------------------------------------------------
-*/
-.site-footer {
-  color: white;
-  background-color: #333; }
-  .site-footer .site-info a {
-    color: white;
-    border-bottom: 1px solid white; }
-    .site-footer .site-info a:hover, .site-footer .site-info a:focus {
-      border-bottom-color: transparent; }
-
-/* path to file: ./04_components
-*
-*  description: 
-*  ------------------------------------------------------------------------------------
-*/
-.home .site-header {
-  border-bottom: none; }
-
-.site-header {
-  width: 100%;
-  padding-top: 0;
-  position: fixed;
-  border-bottom: 1px solid #f0f0f0; }
-  .site-header .site-branding .custom-logo-link {
-    display: none; }
-  .site-header .product_list_widget li .quantity {
-    color: white; }
-
-/* path to file: ./04_components
-*
-*  description: 
-*  ------------------------------------------------------------------------------------
-*/
 .jumbo-wrapper {
   width: 100%;
   height: 400px;
   background-size: cover;
   background-position: center center; }
-  @media screen and (min-width: 568px) {
-    .jumbo-wrapper {
-      height: 600px; } }
   .jumbo-wrapper .jumbotron {
     width: 100%;
     height: 100%; }
     .jumbo-wrapper .jumbotron .content {
       max-width: 100%;
       padding: 15px;
-      color: white;
-      background-color: #dc0c1f; }
-      @media screen and (min-width: 568px) {
-        .jumbo-wrapper .jumbotron .content {
-          max-width: 66.666667%;
-          padding: 30px; } }
-      @media screen and (min-width: 768px) {
-        .jumbo-wrapper .jumbotron .content {
-          max-width: 50%; } }
-      @media screen and (min-width: 1280px) {
-        .jumbo-wrapper .jumbotron .content {
-          max-width: 33.333333%; } }
+      color: white; }
       .jumbo-wrapper .jumbotron .content h1 {
         color: white;
         font-size: 1.5em; }
-        @media screen and (min-width: 568px) {
-          .jumbo-wrapper .jumbotron .content h1 {
-            font-size: 2.617924em; } }
       .jumbo-wrapper .jumbotron .content .button-wrapper {
         margin-top: 50px; }
         .jumbo-wrapper .jumbotron .content .button-wrapper .button {
@@ -292,81 +60,3 @@ input[type="submit"].alt,
             content: "\f178";
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale; }
-
-/* path to file: ./04_components
-*
-*  description: 
-*  ------------------------------------------------------------------------------------
-*/
-.product_meta a {
-  padding-bottom: 2px;
-  color: #dc0c1f;
-  border-bottom: 1px solid #dc0c1f;
-  transition: all 300ms ease-in-out; }
-  .product_meta a:hover, .product_meta a:focus {
-    color: #dc0c1f;
-    border-bottom-color: transparent; }
-
-/* path to file: ./04_components
-*
-*  description: 
-*  ------------------------------------------------------------------------------------
-*/
-.storefront-primary-navigation {
-  background-color: #f2f2f2; }
-
-.main-navigation ul.menu > li > a {
-  border-bottom: 4px solid transparent;
-  transition: all 300ms ease-in-out; }
-  .main-navigation ul.menu > li > a:hover, .main-navigation ul.menu > li > a:focus {
-    color: #dc0c1f; }
-
-.cart-navigation {
-  display: none; }
-  @media screen and (min-width: 768px) {
-    .cart-navigation {
-      width: 100%;
-      height: 40px;
-      display: block;
-      background-color: black; }
-      .cart-navigation .cart-contents {
-        padding: 8px 0 7px 0;
-        color: white !important; }
-        .cart-navigation .cart-contents .count {
-          opacity: 1; } }
-
-.site-header .main-navigation {
-  width: 100% !important;
-  padding-top: 17px; }
-
-.site-header ul.menu li.current-menu-item > a {
-  color: #dc0c1f;
-  border-bottom-color: #dc0c1f; }
-
-.main-navigation ul.menu ul.sub-menu {
-  background-color: black; }
-  .main-navigation ul.menu ul.sub-menu li > a {
-    color: white;
-    transition: all 300ms ease-in-out; }
-    .main-navigation ul.menu ul.sub-menu li > a::after {
-      margin-top: 3px;
-      font-family: 'FontAwesome';
-      font-size: 10px;
-      font-weight: 300;
-      text-rendering: auto;
-      content: "\f054";
-      float: right; }
-    .main-navigation ul.menu ul.sub-menu li > a:hover, .main-navigation ul.menu ul.sub-menu li > a:focus {
-      color: black;
-      background-color: white; }
-
-/* path to file: ./04_components
-*
-*  description: 
-*  ------------------------------------------------------------------------------------
-*/
-.site-content {
-  padding-top: 86px; }
-  @media screen and (min-width: 768px) {
-    .site-content {
-      padding-top: 138px; } }

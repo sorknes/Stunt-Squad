@@ -19,7 +19,7 @@ gulp.task('sass', function(){
 
 /* task, watch changes to sass file
 */
-gulp.task('watch', function(){
+gulp.task('default', function(){
   gulp.watch('assets/sass/**/*.scss', ['sass']); 
 })
 
