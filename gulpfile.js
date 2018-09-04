@@ -7,12 +7,14 @@
 
 var gulp 			= require('gulp')
 		sass 			= require('gulp-sass')
-		cssnano 	= require('gulp-cssnano');
+		cssnano 	= require('gulp-cssnano')
+		plumber 	= require('gulp-plumber');
 
 /* task, sass
 */
 gulp.task('sass', function(){
-  return gulp.src('assets/sass/**/*.scss')
+	return gulp.src('assets/sass/**/*.scss')
+		.pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest(''))
 });

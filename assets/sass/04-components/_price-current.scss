@@ -4,8 +4,6 @@
 // ===============================================================================
 //
 
-@import './../03-base/colors';
-
-@import './site-header';
-
-@import './price-current';
+.woocommerce-Price-currencySymbol {
+  margin-right: 5px;
+}
