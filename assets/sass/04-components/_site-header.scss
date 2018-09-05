@@ -4,6 +4,15 @@
 // ===============================================================================
 //
 
+.main-navigation ul li a,
+.main-navigation ul li > a,
+.site-title a,
+a.cart-contents,
+.site-header-cart .widget_shopping_cart a,
+.site-header-cart > li > a {
+  font-size: 1.125em;
+}
+
 .main-navigation ul li a:hover,
 .main-navigation ul li a:focus,
 .main-navigation ul li:hover > a,
@@ -42,6 +51,7 @@ a.cart-contents:focus,
 
         .cart-contents {
           color: $black-tint-60;
+          font-size: 0.875em;
 
           &:hover, &:focus {
             color: $base-link-color;

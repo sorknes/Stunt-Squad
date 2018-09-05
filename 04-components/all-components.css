@@ -82,6 +82,14 @@ a {
     background-color: red;
     z-index: -1; }
 
+.main-navigation ul li a,
+.main-navigation ul li > a,
+.site-title a,
+a.cart-contents,
+.site-header-cart .widget_shopping_cart a,
+.site-header-cart > li > a {
+  font-size: 1.125em; }
+
 .main-navigation ul li a:hover,
 .main-navigation ul li a:focus,
 .main-navigation ul li:hover > a,
@@ -107,7 +115,8 @@ a.cart-contents:focus,
   .site-header .sp-header-row .site-header-cart.menu {
     text-align: left; }
     .site-header .sp-header-row .site-header-cart.menu .cart-contents {
-      color: #666666; }
+      color: #666666;
+      font-size: 0.875em; }
       .site-header .sp-header-row .site-header-cart.menu .cart-contents:hover, .site-header .sp-header-row .site-header-cart.menu .cart-contents:focus {
         color: #dc0c1f; }
   .site-header .sp-header-row .site-header-cart .widget_shopping_cart {
