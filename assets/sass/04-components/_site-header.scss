@@ -11,6 +11,7 @@ a.cart-contents,
 .site-header-cart .widget_shopping_cart a,
 .site-header-cart > li > a {
   font-size: 1.125em;
+  border-bottom: 2px solid transparent;
 }
 
 .main-navigation ul li a:hover,
@@ -27,6 +28,11 @@ a.cart-contents:focus,
 .site-header-cart:focus > li > a,
 .site-header ul.menu li.current-menu-item > a {
   color: $base-link-color-hover;
+  
+}
+
+.site-header ul.menu li.current-menu-item > a {
+  border-bottom-color: $base-link-color-hover;
 }
 
 .woocommerce-active {
