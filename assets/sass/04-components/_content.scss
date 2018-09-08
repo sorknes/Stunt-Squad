@@ -1,0 +1,27 @@
+// -------------------------------------------------------------------------------
+//
+// Description: Insert text here
+// ===============================================================================
+//
+
+.entry-title,
+.entry-content {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.entry-title {
+  padding: 0 0 .5em;
+  margin-bottom: 1em;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+
+  &::before {
+    width: 20px;
+    height: 4px;
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0;
+    background-color: $base-link-color;
+  }
+}

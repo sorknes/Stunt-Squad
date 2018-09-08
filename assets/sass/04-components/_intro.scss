@@ -24,14 +24,16 @@
   background-color: $base-link-color;
 
   @media screen and (min-width: $handheld) {
-    width: 460px;
+    width: 440px;
     right: auto; left: auto;
   }
 
   .entry-header {
     h1 {
+      width: 100%;
       text-align: left;
       font-size: 1.75em;
+      border-bottom: none;
 
       @media screen and (min-width: $handheld) {
         font-size: 3em;
@@ -40,6 +42,7 @@
   }
 
   .entry-content {
+    width: 100%;
     margin-top: 20px;
     text-align: left;
     font-size: 0.850em;

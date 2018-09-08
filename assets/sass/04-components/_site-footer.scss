@@ -1,0 +1,80 @@
+// -------------------------------------------------------------------------------
+//
+// Description: Insert text here
+// ===============================================================================
+//
+
+.site-footer {
+  border-bottom: 4px solid $base-link-color;
+
+  .footer-widgets {
+    padding-top: 2em;
+
+    &.col-4 {
+      .block {
+        width: 30%;
+        margin-right: 3.333333%;
+      }
+    }
+
+    .widget-title {
+      position: relative;
+      // border-bottom: none;
+
+      &::before {
+        width: 20px;
+        height: 4px;
+        content: '';
+        position: absolute;
+        left: 0; bottom: 0;
+        background-color: $base-link-color;
+      }
+    }
+
+    .textwidget {
+      ul {
+        li {
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+
+  .site-info {
+    padding-bottom: 0;
+  }
+}
+
+.widget_nav_menu ul li::before {
+  margin-left: -2em;
+  color: $black-tint-30;
+  font-size: 0.75em;
+  content: '\f054';
+  opacity: 1;
+}
+
+.widget_search {
+  form {
+    &::before {
+      @include transition($default);
+    }
+
+    &:hover, &:focus {
+      &::before {
+        color: red;
+      }
+    }
+
+    input[type=search] {
+      border-bottom: 1px solid $black-tint-60;
+      background-color: white;
+      box-shadow: none;
+    
+      @include transition($default);
+    
+      &:hover, &:focus {
+        border-bottom-color: $base-link-color;
+      }
+    }
+  }
+}

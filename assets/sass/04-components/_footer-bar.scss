@@ -1,0 +1,28 @@
+// -------------------------------------------------------------------------------
+//
+// Description: Insert text here
+// ===============================================================================
+//
+
+.sfb-footer-bar {
+  .widget {
+    .widget-title {
+      position: relative;
+
+      &::before {
+        width: 20px;
+        height: 4px;
+        content: '';
+        position: absolute;
+        left: 0; bottom: 0;
+        background-color: $base-link-color;
+      }
+    }
+
+    .textwidget {
+      p {
+        font-size: 1.125em;
+      }
+    }
+  }
+}
