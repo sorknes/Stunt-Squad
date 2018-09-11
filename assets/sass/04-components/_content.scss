@@ -8,6 +8,13 @@
 .entry-content {
   width: 75%;
   margin: 0 auto;
+
+  hr {
+    width: 20px;
+    height: 4px;
+    margin: 40px auto 40px auto;
+    background-color: $base-link-color;
+  }
 }
 
 .entry-title {

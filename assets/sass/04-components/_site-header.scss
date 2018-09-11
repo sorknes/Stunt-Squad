@@ -138,6 +138,7 @@ a.cart-contents:focus,
 
       &:hover, &:focus {
         border-bottom-color: $base-link-color;
+        box-shadow: 0 1px 0 0 $base-link-color;
       }
     }
 
@@ -149,7 +150,7 @@ a.cart-contents:focus,
 
       &:hover, &:focus {
         &::before {
-          color: red;
+          color: $base-link-color;
         }
       }
     }

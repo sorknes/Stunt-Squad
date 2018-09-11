@@ -1,0 +1,37 @@
+// -------------------------------------------------------------------------------
+//
+// Description: Insert text here
+// ===============================================================================
+//
+
+.tmm {
+  margin-top: 60px;
+
+  &.tmm_team-stunt-squad {
+    .tmm_container {
+      .tmm_member {
+        margin-bottom: 60px;
+        position: relative;
+        border: 1px solid $black-tint-10 !important;;
+        box-shadow: none;
+
+        &::before {
+          width: calc(100% + 2px);
+          height: 2px;
+          content: '';
+          position: absolute;
+          top: -2px; left: -1px; right: -1px;
+          background-color: $base-link-color;
+        }
+
+        .tmm_photo {
+          position: relative;
+          border: none;
+          border-radius: 0 !important;
+          box-shadow: none;
+          z-index: 2;
+        }
+      }
+    }
+  }
+}
