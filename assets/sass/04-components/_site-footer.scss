@@ -7,6 +7,12 @@
 .site-footer {
   border-bottom: 4px solid $base-link-color;
 
+  a {
+    &:hover, &:focus {
+      color: $base-link-color-hover;
+    }
+  }
+
   .footer-widgets {
     padding-top: 2em;
 

@@ -17,3 +17,12 @@
 .product_title {
   width: 100%;
 }
+
+.single-product div.product p.price {
+  font-size: 2em;
+}
+
+.storefront-sorting {
+  padding-bottom: 15px;
+  border-bottom: 1px solid $black-tint-10;
+}

@@ -29,6 +29,26 @@
   }
 }
 
+.woocommerce-products-header__title.page-title {
+  text-align: center;
+  position: relative;
+
+  &::after {
+    width: 80px;
+    height: 12px;
+    margin-left: -40px;
+    position: absolute;
+    bottom: 0; left: 50%;
+    content: ' ';
+    background-color: $base-link-color;
+    z-index: -1;
+  }
+}
+
+.entry-title {
+  text-align: left;
+}
+
 .storefront-product-section {
   .section-title {
     position: relative;
@@ -40,7 +60,7 @@
       position: absolute;
       bottom: 0; left: 50%;
       content: ' ';
-      background-color: red;
+      background-color: $base-link-color;
       z-index: -1;
     }
   }

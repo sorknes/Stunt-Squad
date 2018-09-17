@@ -99,6 +99,7 @@ h1, h2, h3, h4 h5 {
   background-color: #dc0c1f; }
 
 .sfb-footer-bar .widget .widget-title {
+  font-size: 1.8750em;
   position: relative; }
   .sfb-footer-bar .widget .widget-title::before {
     width: 20px;
@@ -200,6 +201,13 @@ a {
 .product_title {
   width: 100%; }
 
+.single-product div.product p.price {
+  font-size: 2em; }
+
+.storefront-sorting {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5; }
+
 .related.products h2 {
   position: relative; }
   .related.products h2::after {
@@ -215,6 +223,23 @@ a {
   .related.products h2.woocommerce-loop-product__title::after {
     display: none; }
 
+.woocommerce-products-header__title.page-title {
+  text-align: center;
+  position: relative; }
+  .woocommerce-products-header__title.page-title::after {
+    width: 80px;
+    height: 12px;
+    margin-left: -40px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: ' ';
+    background-color: #dc0c1f;
+    z-index: -1; }
+
+.entry-title {
+  text-align: left; }
+
 .storefront-product-section .section-title {
   position: relative; }
   .storefront-product-section .section-title::after {
@@ -225,11 +250,13 @@ a {
     bottom: 0;
     left: 50%;
     content: ' ';
-    background-color: red;
+    background-color: #dc0c1f;
     z-index: -1; }
 
 .site-footer {
   border-bottom: 4px solid #dc0c1f; }
+  .site-footer a:hover, .site-footer a:focus {
+    color: #860e19; }
   .site-footer .footer-widgets {
     padding-top: 2em; }
     .site-footer .footer-widgets.col-4 .block {
@@ -351,9 +378,8 @@ a.cart-contents:focus,
 .tmm {
   margin-top: 60px; }
   .tmm.tmm_team-stunt-squad .tmm_container .tmm_member {
-    margin-bottom: 60px;
     position: relative;
-    border: 1px solid #e5e5e5 !important;
+    border: none;
     box-shadow: none; }
     .tmm.tmm_team-stunt-squad .tmm_container .tmm_member::before {
       width: calc(100% + 2px);
